@@ -32,7 +32,7 @@
       cursor: none;
     }
 
-    /* ── Custom cursor ── */
+    
     #cur {
       width: 22px; height: 22px;
       border: 1.5px solid var(--acc);
@@ -53,7 +53,7 @@
       transition: background 0.3s;
     }
 
-    /* ── Background ── */
+    
     .bg-grid {
       position: fixed; inset: 0;
       background-image:
@@ -81,7 +81,7 @@
       z-index: 10;
     }
 
-    /* ── Layout ── */
+    
     .wrap {
       position: relative; z-index: 2;
       max-width: 1200px;
@@ -89,7 +89,7 @@
       padding: 0 2rem;
     }
 
-    /* ── Header ── */
+    
     header { padding: 4.5rem 0 2.5rem; text-align: center; }
 
     .status-bar {
@@ -174,7 +174,7 @@
     }
     .subtitle .br { color: var(--acc); opacity: .5; }
 
-    /* ── Divider ── */
+    
     .divider {
       display: flex; align-items: center; gap: 1rem;
       margin: 3.5rem 0 2.5rem;
@@ -189,7 +189,7 @@
       font-family: 'Share Tech Mono', monospace;
     }
 
-    /* ── Cards Grid ── */
+    
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
@@ -221,7 +221,7 @@
       to   { opacity:1; transform:translateY(0); }
     }
 
-    /* Sweep shimmer */
+    
     .card::before {
       content:'';
       position:absolute; top:0; left:-120%; width:60%; height:100%;
@@ -230,7 +230,7 @@
     }
     .card:hover::before { left:160%; }
 
-    /* Corner cut */
+    
     .card::after {
       content:'';
       position:absolute; bottom:0; right:0;
@@ -244,7 +244,7 @@
     .card:hover { transform: translateY(-4px); }
     .card:hover::after { border-color: transparent transparent var(--c-acc) transparent; }
 
-    /* colour variants applied via inline style on each card */
+    
     .card[data-accent="green"]  { --c-acc: var(--acc);  }
     .card[data-accent="cyan"]   { --c-acc: var(--acc2); }
     .card[data-accent="orange"] { --c-acc: var(--acc3); }
@@ -252,7 +252,7 @@
 
     .card:hover { box-shadow: 0 12px 48px rgba(0,0,0,.5), 0 0 0 1px var(--c-acc); border-color: var(--c-acc); }
 
-    /* Card inner */
+    
     .card-top {
       display: flex; align-items: flex-start;
       justify-content: space-between;
@@ -287,7 +287,7 @@
       letter-spacing: .1em;
     }
 
-    /* Tag colours */
+    
     [data-accent="green"]  .c-tag { color:var(--acc);  border-color:rgba(0,255,136,.25);  background:rgba(0,255,136,.06);  }
     [data-accent="cyan"]   .c-tag { color:var(--acc2); border-color:rgba(0,212,255,.25);  background:rgba(0,212,255,.06);  }
     [data-accent="orange"] .c-tag { color:var(--acc3); border-color:rgba(255,107,53,.25); background:rgba(255,107,53,.06); }
@@ -351,7 +351,7 @@
     }
     .f-txt em { font-style:normal; color: var(--acc); opacity:.7; }
 
-    /* ── Responsive ── */
+    
     @media(max-width:640px) {
       .grid { grid-template-columns: 1fr; }
       body  { cursor: auto; }
@@ -361,11 +361,11 @@
 </head>
 <body>
 
-  <!-- Cursor -->
+  
   <div id="cur"></div>
   <div id="cur-dot"></div>
 
-  <!-- Backgrounds -->
+  
   <div class="bg-grid"></div>
   <div class="scanlines"></div>
   <div class="vignette"></div>
@@ -373,7 +373,7 @@
 
   <div class="wrap">
 
-    <!-- HEADER -->
+    
     <header>
       <div class="status-bar">
         <div class="s-dot"></div>
@@ -396,17 +396,17 @@
       </p>
     </header>
 
-    <!-- DIVIDER -->
+    
     <div class="divider">
       <div class="div-line"></div>
       <div class="div-label">// accès modules</div>
       <div class="div-line"></div>
     </div>
 
-    <!-- CARDS -->
+    
     <div class="grid">
 
-      <!-- 1 · Multi Search -->
+     
       <a class="card" href="https://multi-search.fr/" target="_blank" rel="noopener" data-accent="green">
         <div class="card-top">
           <div class="c-icon">🔍</div>
@@ -426,7 +426,7 @@
         </div>
       </a>
 
-      <!-- 2 · Reacher -->
+      
       <a class="card" href="https://reacher-cdc.ru/" target="_blank" rel="noopener" data-accent="cyan">
         <div class="card-top">
           <div class="c-icon">👤</div>
@@ -446,7 +446,7 @@
         </div>
       </a>
 
-      <!-- 3 · GeoSpy -->
+     
       <a class="card" href="https://geospy.ai/" target="_blank" rel="noopener" data-accent="orange">
         <div class="card-top">
           <div class="c-icon">📍</div>
